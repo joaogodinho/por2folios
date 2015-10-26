@@ -1,0 +1,15 @@
+body {
+  margin-top: 20px;
+}
+
+.borderless td, .borderless th {
+    border: none !important;
+}
+
+.rating {
+  color: #DAA017;
+}
+
+a.btn {
+  margin-right: 2px;
+}
