@@ -6,10 +6,16 @@ body {
     border: none !important;
 }
 
+/* Yellowish stars */
 .rating {
   color: #DAA017;
 }
 
 a.btn {
   margin-right: 2px;
+}
+
+/* Make table rows show pointer on hover */
+#table-activities-list tr {
+  cursor: pointer;
 }

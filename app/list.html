@@ -56,10 +56,10 @@
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
       </nav>
-      <ol class="breadcrumb">
+      <!-- <ol class="breadcrumb">
         <li><a href="#">Categoria</a></li>
         <li><a href="#">Sub-Categoria</a></li>
-        <li class="active">Atividade</li>
+        <li class="active">Actividade</li>
       </ol>
       <h1>Software Development at Xpand-IT</h1>
       <div class="panel panel-default">
@@ -100,7 +100,7 @@
       </div>
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">Relatório de Atividades</h3>
+          <h3 class="panel-title">Relatório de Actividades</h3>
         </div>
         <div class="panel-body">
           <table class="table borderless">
@@ -151,7 +151,61 @@
             </tbody>
           </table>
         </div>
-      </div>
+      </div> -->
+      <table class="table table-hover" id="table-activities-list">
+        <thead>
+          <tr>
+            <th>Atividade</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="clickable-row">
+            <td class="activity-title">Desenvolvimento de software numa empresa (Xpand-IT)</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Desenvolvimento de software numa empresa (GATEWIT)</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Planificação e optimização de redes - GDC Nokia Portugal</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Estagio na ROFF</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Modernização de um Jardim de Infância (website e redes sociais)</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Part-time como programador na Void</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Saber Com Lógica Revisão Editorial</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">INESC-ID Desenvolvimento de Acelerador de testes para Arq. baseadas em serviços</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">Smart City  NEETI</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">SecurityTeam@IST</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+          <tr class="clickable-row">
+            <td class="activity-title">LAGE2: Semana Empresarial e Tecnologica Criação da aplicação Android</td>
+            <td class="rating"><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star-empty"></span></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -190,5 +244,22 @@
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
+    <div class="modal fade" tabindex="-1" role="dialog" id="modal-activity-details">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Atividade</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-center"><img src="images/loader.gif" alt="A carregar..."></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+            <a href="activity.html" class="btn btn-primary" role="button">Detalhes</a>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
   </body>
 </html>
