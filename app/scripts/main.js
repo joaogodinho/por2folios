@@ -1,5 +1,6 @@
 $(function() {
     $(".clickable-row").click(function() {
+        console.log("hi");
         var actTitle = $(".activity-title", this).text();
         var modal = $("#modal-activity-details");
         // Set title
